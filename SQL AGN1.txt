@@ -1,0 +1,64 @@
+What is a relational database management system (RDBMS)? 
+What are the advantages of a database management system over a file system?
+
+A relational database is a type of database that stores and provides access to data points that are related to one another. 
+Relational databases are based on the relational model, an intuitive, straightforward way of representing data in tables.
+
+Privacy: Limited access means privacy of data. Easy access to data – Database systems manages data in such a way so that the data is easily accessible with fast response times. 
+Easy recovery: Since database systems keeps the backup of data, it is easier to do a full recovery of data in case of a failure.
+
+It allows database admins to maintain, control, update data into the database easily. With RDBMS, backing up of data becomes easy. Automation tools of RBDMS automate these tasks.
+
+
+
+In a database management system, explain the ACID properties.
+
+
+A transaction is a single logical unit of work which accesses and possibly modifies the contents of a database. Transactions access data using read and write operations. 
+In order to maintain consistency in a database, before and after the transaction, certain properties are followed. These are called ACID properties. 
+
+A transaction in a database system must maintain Atomicity, Consistency, Isolation, and Durability.
+Commonly known as ACID properties.
+In order to ensure accuracy, completeness, and data integrity.
+
+
+
+Explain the concept of Normalization.
+
+Concept: Normalization. Normalization is the process of reducing a complex data structure into its simplest, most stable structure to minimize redundancy.
+
+
+Explain the many types of query languages used in relational databases. DQL, DML, DCL, and DDL are some examples.
+
+Structured Query Language(SQL) as we all know is the database language by the use of which we can perform certain operations on the existing database and create a database.
+SQL uses certain commands like Create, Drop, Insert, etc. to carry out the required tasks. 
+
+These SQL commands are mainly categorized into four categories as: 
+
+DDL – Data Definition Language
+DQl – Data Query Language
+DML – Data Manipulation Language
+DCL – Data Control Language
+
+
+What is the difference between the main key and a composite key? Give instances of how primary key and composite are used.
+
+While a primary key and a composite key might do the same things, the primary key will consist of one column, where the composite key will consist of two or more columns. 
+The relationship between a primary key and a foreign key is quite different.
+
+Create a table with a primary key, a column default value, and a column unique constraint in SQL.
+create table customers
+(
+customerid int not null,
+customername varchar(100),
+contactname varchar(100),
+address varchar(100), 
+city varchar(100),
+postalcode varchar(10),
+country varchar(20),
+PRIMARY KEY (customerid)
+)
+
+
+
+
